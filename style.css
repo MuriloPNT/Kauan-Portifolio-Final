@@ -1,0 +1,154 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #00bcd4;
+}
+
+/* Botão modo escuro */
+#modoBtn {
+  background-color: #00bcd4;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+#modoBtn:hover {
+  background-color: #0097a7;
+}
+
+/* Seções */
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#sobre img {
+  border-radius: 50%;
+  width: 150px;
+  margin: 20px 0;
+}
+
+.projetos-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.projeto {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.projeto:hover {
+  transform: scale(1.05);
+}
+
+.projeto img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #00bcd4;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0097a7;
+}
+
+/* Rodapé */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* 🌙 Modo Escuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode header {
+  background-color: #333;
+}
+
+body.dark-mode .projeto {
+  background-color: #1e1e1e;
+  border-color: #444;
+}
